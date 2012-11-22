@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C# Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LLAHImport", "LLAHImport\LLAHImport.csproj", "{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfToImage", "C:\Users\shimona\Downloads\ConvertPDF\PdfToImage\PdfToImage.csproj", "{0AC963ED-4835-41D8-9BE2-57623402819D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertPDF", "C:\Users\shimona\Downloads\ConvertPDF\ConvertPDF\ConvertPDF.csproj", "{655ECECB-4275-4EE9-A516-B44B99B27791}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		DLL|Any CPU = DLL|Any CPU
+		DLL|x86 = DLL|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.Debug|x86.ActiveCfg = Debug|x86
+		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.Debug|x86.Build.0 = Debug|x86
+		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.DLL|Any CPU.ActiveCfg = Debug|x86
+		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.DLL|x86.ActiveCfg = Debug|x86
+		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.DLL|x86.Build.0 = Debug|x86
+		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.Release|Any CPU.ActiveCfg = Release|x86
+		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.Release|x86.ActiveCfg = Release|x86
+		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.Release|x86.Build.0 = Release|x86
+		{0AC963ED-4835-41D8-9BE2-57623402819D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AC963ED-4835-41D8-9BE2-57623402819D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AC963ED-4835-41D8-9BE2-57623402819D}.Debug|x86.ActiveCfg = Debug|x86
+		{0AC963ED-4835-41D8-9BE2-57623402819D}.Debug|x86.Build.0 = Debug|x86
+		{0AC963ED-4835-41D8-9BE2-57623402819D}.DLL|Any CPU.ActiveCfg = Debug|x86
+		{0AC963ED-4835-41D8-9BE2-57623402819D}.DLL|x86.ActiveCfg = Debug|x86
+		{0AC963ED-4835-41D8-9BE2-57623402819D}.DLL|x86.Build.0 = Debug|x86
+		{0AC963ED-4835-41D8-9BE2-57623402819D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AC963ED-4835-41D8-9BE2-57623402819D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AC963ED-4835-41D8-9BE2-57623402819D}.Release|x86.ActiveCfg = Release|x86
+		{0AC963ED-4835-41D8-9BE2-57623402819D}.Release|x86.Build.0 = Release|x86
+		{655ECECB-4275-4EE9-A516-B44B99B27791}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{655ECECB-4275-4EE9-A516-B44B99B27791}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{655ECECB-4275-4EE9-A516-B44B99B27791}.Debug|x86.ActiveCfg = Debug|x86
+		{655ECECB-4275-4EE9-A516-B44B99B27791}.Debug|x86.Build.0 = Debug|x86
+		{655ECECB-4275-4EE9-A516-B44B99B27791}.DLL|Any CPU.ActiveCfg = DLL|Any CPU
+		{655ECECB-4275-4EE9-A516-B44B99B27791}.DLL|Any CPU.Build.0 = DLL|Any CPU
+		{655ECECB-4275-4EE9-A516-B44B99B27791}.DLL|x86.ActiveCfg = DLL|x86
+		{655ECECB-4275-4EE9-A516-B44B99B27791}.DLL|x86.Build.0 = DLL|x86
+		{655ECECB-4275-4EE9-A516-B44B99B27791}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{655ECECB-4275-4EE9-A516-B44B99B27791}.Release|Any CPU.Build.0 = Release|Any CPU
+		{655ECECB-4275-4EE9-A516-B44B99B27791}.Release|x86.ActiveCfg = Release|x86
+		{655ECECB-4275-4EE9-A516-B44B99B27791}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
