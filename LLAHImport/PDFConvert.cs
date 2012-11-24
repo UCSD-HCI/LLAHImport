@@ -22,7 +22,7 @@ namespace LLAHImport
         /// <summary>The name of the DLL i'm using to work</summary>
         public const string GhostScriptDLLName = "gsdll32.dll";
         /// <summary>Use to check for default transformation</summary>
-        private static bool useSimpleAnsiConversion = true;
+        //private static bool useSimpleAnsiConversion = true;
         /// <summary>Thanks to 	tchu_2000 to remind that u should never hardcode strings! :)</summary>
         private const string GS_OutputFileFormat = "-sOutputFile={0}";
         private const string GS_DeviceFormat = "-sDEVICE={0}";
@@ -525,7 +525,7 @@ namespace LLAHImport
                     throw new ApplicationException("I can't create a new istance of Ghostscript please verify no other istance are running!");
                 }
             }
-            catch (BadImageFormatException formatException)//99.9% of time i'm just loading a 32bit dll in a 64bit enviroment!
+            catch (BadImageFormatException)//99.9% of time i'm just loading a 32bit dll in a 64bit enviroment!
             {
                 ClearParameters(ref aGCHandle, ref gchandleArgs);
                 //Check if i'm in a 64bit enviroment or a 32bit
@@ -540,7 +540,7 @@ namespace LLAHImport
                     "Please download any version above version 8.64 from the original website in the 32bit or x86 or i386 version!"));
                 }
             }
-            catch (DllNotFoundException ex)//in this case the dll we r using isn't the dll we expect
+            catch (DllNotFoundException)//in this case the dll we r using isn't the dll we expect
             {
                 ClearParameters(ref aGCHandle, ref gchandleArgs);
                 throw new ApplicationException("The gsdll32.dll wasn't found in default dlls search path" +

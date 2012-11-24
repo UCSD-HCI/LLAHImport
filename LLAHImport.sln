@@ -1,25 +1,63 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual C# Express 2010
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LLAHImport", "LLAHImport\LLAHImport.csproj", "{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Commandline|Any CPU = Commandline|Any CPU
+		Commandline|Mixed Platforms = Commandline|Mixed Platforms
+		Commandline|Win32 = Commandline|Win32
+		Commandline|x64 = Commandline|x64
+		Commandline|x86 = Commandline|x86
 		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
 		DLL|Any CPU = DLL|Any CPU
+		DLL|Mixed Platforms = DLL|Mixed Platforms
+		DLL|Win32 = DLL|Win32
+		DLL|x64 = DLL|x64
 		DLL|x86 = DLL|x86
 		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.Commandline|Any CPU.ActiveCfg = Release|x64
+		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.Commandline|Mixed Platforms.ActiveCfg = Release|x64
+		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.Commandline|Mixed Platforms.Build.0 = Release|x64
+		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.Commandline|Win32.ActiveCfg = Debug|x86
+		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.Commandline|Win32.Build.0 = Debug|x86
+		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.Commandline|x64.ActiveCfg = Release|x64
+		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.Commandline|x64.Build.0 = Release|x64
+		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.Commandline|x86.ActiveCfg = Release|x64
 		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.Debug|Mixed Platforms.ActiveCfg = Debug|x64
+		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.Debug|Mixed Platforms.Build.0 = Debug|x64
+		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.Debug|Win32.ActiveCfg = Debug|x86
+		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.Debug|Win32.Build.0 = Debug|x86
+		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.Debug|x64.ActiveCfg = Debug|x64
+		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.Debug|x64.Build.0 = Debug|x64
 		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.Debug|x86.ActiveCfg = Debug|x86
 		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.Debug|x86.Build.0 = Debug|x86
 		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.DLL|Any CPU.ActiveCfg = Debug|x86
+		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.DLL|Mixed Platforms.ActiveCfg = Debug|x64
+		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.DLL|Mixed Platforms.Build.0 = Debug|x64
+		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.DLL|Win32.ActiveCfg = Debug|x64
+		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.DLL|x64.ActiveCfg = Debug|x64
+		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.DLL|x64.Build.0 = Debug|x64
 		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.DLL|x86.ActiveCfg = Debug|x86
 		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.DLL|x86.Build.0 = Debug|x86
 		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.Release|Any CPU.ActiveCfg = Release|x86
+		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.Release|Mixed Platforms.ActiveCfg = Release|x64
+		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.Release|Mixed Platforms.Build.0 = Release|x64
+		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.Release|Win32.ActiveCfg = Release|x64
+		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.Release|x64.ActiveCfg = Release|x64
+		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.Release|x64.Build.0 = Release|x64
 		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.Release|x86.ActiveCfg = Release|x86
 		{297DF99D-ACBE-40D6-A0D7-2032F9B0034D}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
