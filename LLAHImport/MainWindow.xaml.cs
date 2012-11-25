@@ -85,22 +85,22 @@ namespace LLAHImport
         private void SelectPDFBtn_Click(object sender, RoutedEventArgs e)
         {
             // Create an instance of the open file dialog box.
-            OpenFileDialog openFileDialog1 = new OpenFileDialog();
+            OpenFileDialog openFileDialog = new OpenFileDialog();
 
             // Set filter options and filter index.
-            openFileDialog1.Filter = "PDF Files|*.pdf|All Files|*.*";
-            openFileDialog1.FilterIndex = 1;
+            openFileDialog.Filter = "PDF Files|*.pdf|All Files|*.*";
+            openFileDialog.FilterIndex = 1;
 
-            openFileDialog1.Multiselect = true;
+            openFileDialog.Multiselect = true;
 
             // Process input if the user clicked OK.
-            if (openFileDialog1.ShowDialog() == true)
+            if (openFileDialog.ShowDialog() == true)
             {
-                foreach (string fileName in openFileDialog1.FileNames)
+                foreach (string fileName in openFileDialog.FileNames)
                 {
-                    DropRectangle.Text += "Adding " + fileName + "...";
+                    DropTbx.Text += "Adding " + fileName + "...";
                     db.AddPDF(fileName);
-                    DropRectangle.Text += " done.\n";
+                    DropTbx.Text += " done.\n";
                 }
             }
         }
@@ -119,14 +119,86 @@ namespace LLAHImport
             int numberOfDocs = db.GetNumberOfDocuments();
             if (numberOfDocs == 0)
             {
-                DropRectangle.Text += "Database is empty.\n";
+                DropTbx.Text += "Database is empty.\n";
             }
             else
             {
-                DropRectangle.Text += numberOfDocs + " documents loaded.\n";
+                DropTbx.Text += numberOfDocs + " documents loaded.\n";
             }
             SelectPDFBtn.IsEnabled = true;
+            DropTbx_EnableDrop();
 
         }
-    }
+
+
+        // Form load event or a similar place
+        private void DropTbx_EnableDrop()
+        {
+            // Enable drag and drop for this form
+            // (this can also be applied to any controls)
+            DropTbx.AllowDrop = true;
+
+            // Add event handlers for the drag & drop functionality   
+            DropTbx.PreviewDragEnter += new DragEventHandler(DropTbx_OnDragOver);
+            DropTbx.PreviewDragOver += new DragEventHandler(DropTbx_OnDragOver);
+            DropTbx.PreviewDrop += new DragEventHandler(DropTbx_Drop);
+        }
+
+        public void DropTbx_OnDragOver(object sender, DragEventArgs e)
+        {
+
+            e.Effects = DragDropEffects.All;
+
+            e.Handled = true;
+
+        }
+
+        // This event occurs when the user drags over the form with 
+        // the mouse during a drag drop operation 
+        void DropTbx_DragEnter(object sender, DragEventArgs e)
+        {
+            // Check if the Dataformat of the data can be accepted
+            // (we only accept file drops from Explorer, etc.)
+            if (e.Data.GetDataPresent(DataFormats.FileDrop, false) == true)
+                e.Effects = DragDropEffects.All; // Okay
+            else
+                e.Effects = DragDropEffects.None; // Unknown data, ignore it
+
+        }
+
+        // Occurs when the user releases the mouse over the drop target 
+        void DropTbx_Drop(object sender, DragEventArgs e)
+        {
+            // Extract the data from the DataObject-Container into a string list
+            string[] FileList = (string[])e.Data.GetData(DataFormats.FileDrop, false);
+
+            // Do something with the data...
+            int numFiles = 0;
+            foreach (string fileName in FileList)
+            {
+                if ((File.Exists(fileName)) &&
+                    (Path.GetExtension(fileName).ToLower() == ".pdf"))
+                {
+                    DropTbx.Text += "Adding " + fileName + "...";
+                    db.AddPDF(fileName);
+                    DropTbx.Text += " done.\n";
+                    numFiles++;
+                }
+                else if (!File.Exists(fileName))
+                {
+                    DropTbx.Text += "Skipping " + fileName + ". File not found\n";
+                }
+                else
+                {
+                    DropTbx.Text += "Skipping " + fileName + ". Only PDF files accepted.\n";
+                }
+
+            }
+            DropTbx.Text += numFiles + " files added!\n";
+
+        }
+
+
+
+   }
 }

@@ -19,7 +19,6 @@
             <TextBox Name="DirectoryPathTbx" Margin="0,0,31,0" Height="26" Grid.Column="1" Grid.ColumnSpan="2" TextChanged="DirectoryPathTbx_TextChanged" />
             <Button Name="SelectDirectoryBtn" Grid.Column="2" Height="26" Content="..." Margin="134,0,0,0" Click="SelectDirectoryBtn_Click" />
             <!--ROW 2-->
-            <Label Content="" Height="26" HorizontalAlignment="Left" Name="label3" VerticalAlignment="Top" Grid.Row="1" Grid.Column="0"/>
             <Button Name="LoadCreateDBBtn" Margin="0,2,6,2" Height="26" Content="Create DB" Grid.Column="1" Grid.Row="1" Click="LoadCreateDBBtn_Click" />
 
             <!--ROW 3-->
@@ -27,7 +26,7 @@
             <Button Name="SelectPDFBtn"  Grid.Column="2" Content="Browse..." Height="26" Margin="0,0,0,0"  Grid.Row="2" Click="SelectPDFBtn_Click" />
 
         </Grid>
-        <TextBox Name="DropRectangle" />
+        <TextBox Name="DropTbx" AllowDrop="True" VerticalScrollBarVisibility="Auto" />
         
     </DockPanel>
 </Window>

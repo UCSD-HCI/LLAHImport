@@ -30,7 +30,7 @@ namespace LLAHImport
             documentListPath = Path.Combine(documentTopDir,fileListName);
             if (!File.Exists(documentListPath))
             {
-                File.Create(documentListPath);
+                File.Create(documentListPath).Close();
             }
             //Reads all entries from documentListPath;
             LoadDocumentList();
