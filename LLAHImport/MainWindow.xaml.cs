@@ -69,19 +69,6 @@ namespace LLAHImport
             LoadCreateDBBtn.IsEnabled = true;
         }
 
-        private void ConvertFiles()
-        {
-            
-
-
-            db.AddPDF("test.pdf");
-            db.AddPDF("C:\\temp\\20120316_lecture_notes.pdf");
-            db.AddPDF("C:\\temp\\20120904 - resume.pdf");
-            db.AddPDF("C:\\temp\\dppdf.pdf");
-            db.AddPDF("C:\\temp\\test.pdf");
-
-        }
-
         private void SelectPDFBtn_Click(object sender, RoutedEventArgs e)
         {
             // Create an instance of the open file dialog box.

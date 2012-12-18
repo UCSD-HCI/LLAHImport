@@ -37,6 +37,9 @@ namespace LLAHImport
 
             //Setup the converter
             converter.JPEGQuality = (int)95;
+            converter.ResolutionX = 200;
+            converter.ResolutionY = 200;
+
             converter.OutputToMultipleFile = true;
             converter.OutputFormat = "jpeg";
         }
